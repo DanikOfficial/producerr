@@ -423,7 +423,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(0.6rem + 2.5vmin);
+  font-size: calc(0.6rem + 2.5vmin) !important;
 }
 
 h2,
