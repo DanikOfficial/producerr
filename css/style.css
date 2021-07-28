@@ -487,7 +487,7 @@ header .hero-wrapper {
   list-style: none;
   position: absolute;
   width: 100%;
-  background-color: #2500e0;
+  background-color: #5407E0;
   z-index: 2;
   border-bottom-right-radius: 3em;
   border-bottom-left-radius: 3em;
@@ -781,6 +781,7 @@ header .hero-wrapper {
 }
 
 footer {
+  overflow-x: hidden;
   height: 250px;
   background: url("img/wave-readme.svg");
   background-size: cover;
@@ -798,10 +799,34 @@ footer p {
   font-size: 80%;
   align-self: center;
 }
+footer .lets-go-up {
+  position: relative;
+  background-color: #f8f8f8;
+  border: 1px solid blue;
+  width: 112px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4em;
+  align-self: flex-end;
+  transition: all 0.3s;
+  flex-grow: 0;
+  transform: translate(100%, 1.9em);
+}
+footer .lets-go-up p {
+  color: #2500e0;
+  font-size: 18px;
+}
 footer figure {
   position: relative;
   transform: translate(-1.5em, 2em);
   align-self: flex-end;
+  cursor: pointer;
+}
+footer figure img {
+  width: 100%;
+  transition: all 0.3s;
 }
 
 /* -------------------- Media Queries ------------------ */
@@ -829,6 +854,14 @@ footer figure {
 
 .show-up {
   animation: 900ms linear show-up forwards;
+}
+
+.show-lets-go-up {
+  animation: 500ms linear show-lets-go-up forwards;
+}
+
+.hide-lets-go-up {
+  animation: 500ms linear hide-lets-go-up forwards;
 }
 
 @keyframes assembly {
@@ -878,6 +911,22 @@ footer figure {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes show-lets-go-up {
+  from {
+    transform: translate(100%, 1.9em);
+  }
+  to {
+    transform: translate(-4em, 1.9em);
+  }
+}
+@keyframes hide-lets-go-up {
+  from {
+    transform: translate(-4em, 1.9em);
+  }
+  to {
+    transform: translate(100%, 1.9em);
   }
 }
 

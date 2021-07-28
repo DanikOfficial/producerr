@@ -2,6 +2,7 @@ let stickyEnabled = false;
 let test = false;
 let notesAppShown = false;
 let todoAppShow = false;
+let goUpShown = false;
 const width = document.body.offsetWidth;
 
 document.body.style.overflow = "hidden";
@@ -21,13 +22,32 @@ splash.ontransitionend = () => {
   splash.remove();
   document.body.style.overflow = "auto";
 };
+
+document.querySelector(".go-up").addEventListener("mouseover", () => {
+  document.querySelector(".lets-go-up").classList.add("show-lets-go-up");
+  goUpShown = true;
+});
+
+document.querySelector(".go-up").addEventListener("mouseout", () => {
+  if (goUpShown) {
+    document.querySelector(".lets-go-up").classList.add("hide-lets-go-up");
+    document.querySelector(".lets-go-up").classList.remove("show-lets-go-up");
+
+    document.querySelector(".lets-go-up").onanimationend = () => {
+      document.querySelector(".lets-go-up").classList.remove("hide-lets-go-up");
+    };
+
+    goUpShown = false;
+  }
+});
+
 document.querySelector(".menu-container").onclick = () => {
   document.querySelector(".menu-container").classList.toggle("change");
   document.querySelector(".main-nav-links").classList.toggle("show");
 };
 
 document.querySelector(".take-tour").addEventListener("click", () => {
-  const yPosition = document.querySelector(".notes-app").offsetTop;
+  const yPosition = document.querySelector(".notes-app").offsetTop - 60;
 
   window.scrollTo(0, yPosition, "smooth");
 });
