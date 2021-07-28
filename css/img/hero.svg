@@ -1,0 +1,10 @@
+<svg id="Artboard_1" data-name="Artboard 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8e2de2"/>
+      <stop offset="1" stop-color="#4a00e0"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_324" data-name="Rectangle 324" width="1919.849" height="1079" fill="url(#linear-gradient)"/>
+  <path id="Path_6423" data-name="Path 6423" d="M0,864.487s321.468,155.837,498.961-99c222.174-258.721,330.374,5.9,411.968,70.55,226.222,264.72,280.9,113.42,449.965-62.584,161.837-150.2,366.871,166.247,558.956,46.654.34,93.683,0,318.611,0,318.611L0,1139.858Z" transform="translate(0 -59.858)" fill="#f8f8f8" fill-rule="evenodd"/>
+</svg>

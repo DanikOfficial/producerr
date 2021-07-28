@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.584" height="94.415" viewBox="0 0 45.584 94.415">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2500e0"/>
+      <stop offset="1" stop-color="#8e2de0"/>
+    </linearGradient>
+  </defs>
+  <g id="take-a-tour" transform="translate(-184 -613.585)">
+    <g id="Group_59" data-name="Group 59" transform="translate(184 613.585)">
+      <path id="Path_1711" data-name="Path 1711" d="M5.632,0,0,5.356,18.3,22.792,0,40.228l5.632,5.356L29.6,22.792Z" transform="translate(45.583 19.696) rotate(90)" fill="url(#linear-gradient)"/>
+      <path id="Path_2019" data-name="Path 2019" d="M5.632,0,0,5.356,18.3,22.792,0,40.228l5.632,5.356L29.6,22.792Z" transform="translate(45.583 38.458) rotate(90)" fill="url(#linear-gradient)"/>
+      <path id="Path_2020" data-name="Path 2020" d="M5.632,0,0,5.356,18.3,22.792,0,40.228l5.632,5.356L29.6,22.792Z" transform="translate(45.583 0) rotate(90)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="Start" transform="translate(185 703)" fill="#8e2de0" font-size="18" font-family="Merriweather-Regular, Merriweather"><tspan x="0" y="0">Start</tspan></text>
+  </g>
+</svg>

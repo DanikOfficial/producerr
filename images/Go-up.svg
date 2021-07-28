@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="41" viewBox="0 0 42 41">
+  <g id="Go-up" transform="translate(-1863 -1020)">
+    <g id="Rectangle_39" data-name="Rectangle 39" transform="translate(1863 1020)" fill="none" stroke="#fff" stroke-width="3">
+      <rect width="42" height="41" rx="8" stroke="none"/>
+      <rect x="1.5" y="1.5" width="39" height="38" rx="6.5" fill="none"/>
+    </g>
+    <g id="double_arrow-24px" transform="translate(1867 1058.474) rotate(-90)">
+      <g id="Bounding_Box" transform="translate(0.295)">
+        <rect id="Rectangle_270" data-name="Rectangle 270" width="34" height="34" transform="translate(0.179)" fill="none"/>
+      </g>
+      <g id="Master" transform="translate(5.702 5.193)">
+        <g id="Group_443" data-name="Group 443">
+          <path id="Path_6362" data-name="Path 6362" d="M17.474,5H11l7.193,11.431L11,27.862h6.474l7.193-11.431Z" transform="translate(-0.93 -5)" fill="#fff"/>
+          <path id="Path_6363" data-name="Path 6363" d="M10.474,5H4l7.193,11.431L4,27.862h6.474l7.193-11.431Z" transform="translate(-4 -5)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

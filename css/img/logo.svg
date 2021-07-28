@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="29.262" viewBox="0 0 110 29.262">
+  <g id="logo" transform="translate(-27 -70)">
+    <text id="duceR" transform="translate(73 92)" fill="#fdfdfd" font-size="21" font-family="Merriweather-Regular, Merriweather"><tspan x="0" y="0">duceR</tspan></text>
+    <text id="Pr" transform="translate(27 92)" fill="#fdfdfd" font-size="21" font-family="Merriweather-Regular, Merriweather"><tspan x="0" y="0">Pr</tspan></text>
+    <g id="baseline-list_alt-24px" transform="translate(49 70)">
+      <path id="Path_843" data-name="Path 843" d="M19.692,5.605V23.84H5.086V5.605H19.692M20.839,3H3.939A1.071,1.071,0,0,0,3,4.172v21.1c0,.521.417,1.172.939,1.172h16.9c.417,0,.939-.651.939-1.172V4.172A1.152,1.152,0,0,0,20.839,3ZM11.346,8.21h6.259v2.605H11.346Zm0,5.21h6.259v2.605H11.346Zm0,5.21h6.259v2.605H11.346ZM7.173,8.21H9.259v2.605H7.173Zm0,5.21H9.259v2.605H7.173Zm0,5.21H9.259v2.605H7.173Z" transform="translate(0)" fill="#f8f8f8"/>
+      <path id="Path_844" data-name="Path 844" d="M0,0H26.419V29.262H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>

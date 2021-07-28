@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="480" height="736" viewBox="0 0 480 736">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #f8f8f8;
+        fill-rule: evenodd;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="240" y1="730" x2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8e2de2"/>
+      <stop offset="1" stop-color="#4a00e0"/>
+    </linearGradient>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <rect class="cls-1" width="480" height="730"/>
+    <path class="cls-2" d="M-1,481s113.9,131,255,3c142.926-132.97,226,8,226,8V736H-1V481Z"/>
+  </g>
+</svg>
