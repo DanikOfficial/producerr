@@ -1,32 +1,11 @@
 let stickyEnabled = false;
+let stickyShown = false;
+
 let test = false;
 let notesAppShown = false;
 let todoAppShown = false;
 let goUpShown = false;
 const width = document.body.offsetWidth;
-
-//document.body.style.overflow = "hidden";
-//window.scrollTo(0, 0);
-
-document.addEventListener("readystatechange", () => {
-  if (
-    document.readyState === "interactive" ||
-    document.readyState === "loading"
-  ) {
-    document.body.style.overflow = "hidden";
-  }
-
-  if (document.readyState === "complete") {
-    document.querySelector(".splash").classList.add("hide-splash");
-  }
-});
-
-const splash = document.querySelector(".splash");
-
-splash.ontransitionend = () => {
-  splash.remove();
-  document.body.style.overflow = "auto";
-};
 
 document.querySelector(".go-up").addEventListener("mouseover", () => {
   document.querySelector(".lets-go-up").classList.add("show-lets-go-up");
@@ -68,29 +47,40 @@ document.querySelector(".go-up").addEventListener("click", () => {
 });
 
 document.addEventListener("scroll", () => {
-  if (window.scrollY === 0) {
-    resetNav();
+  if (window.scrollY >= 100 && !stickyEnabled) {
+    document.querySelector(".main-nav").classList.add("hide-nav");
   }
 
-  if (window.scrollY > 427 && !stickyEnabled) {
+  if (window.scrollY < 100 && (!stickyEnabled || stickyEnabled)) {
+    document.querySelector(".main-nav").classList.remove("hide-nav");
+  }
+
+  if (window.scrollY > 200 && !stickyEnabled) {
     document.querySelector(".main-nav").classList.add("sticky-nav");
     stickyEnabled = true;
   }
 
-  if (window.scrollY > 460 && stickyEnabled) {
-    document.querySelector(".main-nav").classList.add("show-sticky");
-  }
-
-  if (window.scrollY < 450 && stickyEnabled) {
-    document.querySelector(".main-nav").classList.remove("show-sticky");
-  }
-
-  if (window.scrollY < 420 && stickyEnabled) {
+  if (window.scrollY <= 200 && stickyEnabled) {
     document.querySelector(".main-nav").classList.remove("sticky-nav");
     stickyEnabled = false;
   }
 
+  if (window.scrollY >= 460 && !stickyShown) {
+    document.querySelector(".main-nav").classList.add("show-sticky");
+    stickyShown = true;
+  }
+
+  if (window.scrollY < 460 && stickyShown) {
+    document.querySelector(".main-nav").classList.remove("show-sticky");
+    stickyShown = false;
+  }
+
   if (document.body.offsetWidth >= 1024) {
+    if (window.scrollY > 480) {
+      document
+        .querySelector(".notes-section .description")
+        .classList.add("show-up");
+    }
   } else {
     if (window.scrollY > 600) {
       document
