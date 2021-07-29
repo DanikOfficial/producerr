@@ -8,13 +8,9 @@ const width = document.body.offsetWidth;
 //document.body.style.overflow = "hidden";
 //window.scrollTo(0, 0);
 
-setTimeout(
-  (el) => {
-    document.querySelector(el).classList.add("hide-splash");
-  },
-  2000,
-  ".splash"
-);
+window.addEventListener("load", () => {
+  document.querySelector(".splash").classList.add("hide-splash");
+});
 
 const splash = document.querySelector(".splash");
 
@@ -76,7 +72,7 @@ document.addEventListener("scroll", () => {
     document.querySelector(".main-nav").classList.add("show-sticky");
   }
 
-  if (window.scrollY > 427 && window.scrollY < 450 && stickyEnabled) {
+  if (window.scrollY < 450 && stickyEnabled) {
     document.querySelector(".main-nav").classList.remove("show-sticky");
   }
 
