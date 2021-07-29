@@ -1,12 +1,12 @@
 let stickyEnabled = false;
 let test = false;
 let notesAppShown = false;
-let todoAppShow = false;
+let todoAppShown = false;
 let goUpShown = false;
 const width = document.body.offsetWidth;
 
-document.body.style.overflow = "hidden";
-window.scrollTo(0, 0);
+//document.body.style.overflow = "hidden";
+//window.scrollTo(0, 0);
 
 setTimeout(
   (el) => {
@@ -39,6 +39,10 @@ document.querySelector(".go-up").addEventListener("mouseout", () => {
 
     goUpShown = false;
   }
+});
+
+document.querySelector(".logo").addEventListener("click", () => {
+  window.scroll(0, 0, "smooth");
 });
 
 document.querySelector(".menu-container").onclick = () => {
@@ -81,17 +85,24 @@ document.addEventListener("scroll", () => {
     stickyEnabled = false;
   }
 
-  if (window.scrollY > 800) {
-    document
-      .querySelector(".notes-section .description")
-      .classList.add("show-up");
+  if (document.body.offsetWidth >= 1024) {
+  } else {
+    if (window.scrollY > 600) {
+      document
+        .querySelector(".notes-section .description")
+        .classList.add("show-up");
+    }
   }
 
   if (document.body.offsetWidth <= 768) {
     if (window.scrollY > 320 && !notesAppShown) {
       document.querySelector(".notes-app").classList.add("slide-in");
-      document.querySelector(".todo-app").classList.add("slide-up");
       notesAppShown = true;
+    }
+
+    if (window.scrollY > 420 && !todoAppShown) {
+      document.querySelector(".todo-app").classList.add("slide-up");
+      todoAppShown = true;
     }
   }
 });
