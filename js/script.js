@@ -8,8 +8,17 @@ const width = document.body.offsetWidth;
 //document.body.style.overflow = "hidden";
 //window.scrollTo(0, 0);
 
-window.addEventListener("load", () => {
-  document.querySelector(".splash").classList.add("hide-splash");
+document.addEventListener("readystatechange", () => {
+  if (
+    document.readyState === "interactive" ||
+    document.readyState === "loading"
+  ) {
+    document.body.style.overflow = "hidden";
+  }
+
+  if (document.readyState === "complete") {
+    document.querySelector(".splash").classList.add("hide-splash");
+  }
 });
 
 const splash = document.querySelector(".splash");
