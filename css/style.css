@@ -603,10 +603,10 @@ header .hero-wrapper {
 .choose-an-app .notes-app,
 .choose-an-app .todo-app {
   position: relative;
-  transition: transform 0.4s;
+  transition: all 0.4s;
 }
 .choose-an-app .notes-app {
-  transform: translateX(-100%);
+  left: -100%;
 }
 .choose-an-app .notes-app figure img {
   width: 60%;
@@ -616,7 +616,7 @@ header .hero-wrapper {
   background: linear-gradient(to left, #8e2de0, #2500e0);
 }
 .choose-an-app .todo-app {
-  transform: translateY(100%);
+  top: 100%;
   opacity: 0;
   background: linear-gradient(to bottom, #f8f8f8, #ffffff);
 }
@@ -1081,20 +1081,20 @@ header .hero-wrapper .hero-box .hero-and-actions .hero-actions .todo-plus:active
 }
 @keyframes slide-in {
   from {
-    transform: translateX(-100%);
+    left: -100%;
   }
   to {
-    transform: translateX(0);
+    left: 0;
   }
 }
 @keyframes slide-up {
   from {
-    transform: translateY(100%);
+    top: 100%;
     opacity: 0;
   }
   to {
-    transform: translateY(0);
     opacity: 1;
+    top: 0;
   }
 }
 @keyframes show-up {
